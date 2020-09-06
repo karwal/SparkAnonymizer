@@ -16,6 +16,7 @@ I have chosen Apache Spark for data processing and anonymization. The reason for
 # Considerations / Assumptions:
 1. The sample data generator is an tool for generating data. It is not production deliverable and no unit tests has been written for this class.
 2. I have used Oracle JDK 14 for compiling and testing this application.
+3. TDD approach.
 
 # Time to download and run the application : 10 minutes
 # Download and Run Apache Spark
@@ -71,10 +72,16 @@ If everything is successfull, output will be produced at ./output/
 check the output of the application. 
 ```less ./output/part-00000-264d3fe4-f7dc-40dd-accf-0db636e8d2aa-c000.txt```
 
-**Note** File name will be different in your case as spark generates random guid based file names.
+**Note** File names will be different in your case as spark generates random guid based file names. Spark automatically splits the output to many files in case of large inputs.
+
+# Processing Time
+In my environment it took about 1 minute to process a 2GB file.
+
+# Application Scaling
+Since application run on Apache Spark, it can be easily horizontly scaled. We just need to run Spark in Cluster mode and add more nodes to spark cluster. In this application Spark Standalone mode was used.
 
 # Unit Testing
-JUnit coverage is provided for classes which house the business logic. 
+JUnit coverage is provided for classes which house the business logic and TDD approach was used. 
 
 # References
 
