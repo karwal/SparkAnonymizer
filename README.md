@@ -3,8 +3,6 @@
 # Design / Architecture
 I have chosen Apache Spark for data processing and anonymization. The reason for Apache Spark's selection is its distributed computing capabilities.
 
-Project structure was generated using Spring Initializr. React has been used for front end.
-
 # Tech-Stack Used to build application:
 
 1. Apache Spark
@@ -12,6 +10,7 @@ Project structure was generated using Spring Initializr. React has been used for
 3. JUnit5 
 4. Mockito
 5. Oracle JDK 14
+6. Mac OS 10.15.6 (19G2021)
 
 
 # Considerations / Assumptions:
