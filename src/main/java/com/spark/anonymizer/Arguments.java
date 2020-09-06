@@ -3,7 +3,9 @@ package com.spark.anonymizer;
 
 import com.spark.anonymizer.exception.InvalidInputException;
 
-public class Arguments {
+import java.io.Serializable;
+
+public class Arguments implements Serializable {
 
     private String input = "./input.txt";
     private String output = "./output";

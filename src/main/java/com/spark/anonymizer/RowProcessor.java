@@ -2,7 +2,9 @@ package com.spark.anonymizer;
 
 import org.apache.spark.sql.Row;
 
-public class RowProcessor {
+import java.io.Serializable;
+
+public class RowProcessor implements Serializable {
 
     public String processRow(Row row) {
         StringBuffer sb = new StringBuffer();
