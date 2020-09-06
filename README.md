@@ -12,6 +12,7 @@ Project structure was generated using Spring Initializr. React has been used for
 3. JUnit5 
 4. Mockito
 5. Oracle JDK 14
+6. Mac OS 10.15.6 (19G2021)
 
 
 # Considerations / Assumptions:
