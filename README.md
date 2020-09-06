@@ -3,8 +3,6 @@
 # Design / Architecture
 I have chosen Apache Spark for data processing and anonymization. The reason for Apache Spark's selection is its distributed computing capabilities.
 
-Project structure was generated using Spring Initializr. React has been used for front end.
-
 # Tech-Stack Used to build application:
 
 1. Apache Spark
