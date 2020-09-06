@@ -18,6 +18,13 @@ I have chosen Apache Spark for data processing and anonymization. The reason for
 2. I have used Oracle JDK 14 for compiling and testing this application.
 3. TDD approach.
 
+# Data Anonymization
+ Reference
+ 
+ https://www.imperva.com/learn/data-security/anonymization/
+ 
+ There are many data anonymization techniques available. I chose **Data Masking** for the purpose this application.
+
 # Time to download and run the application : 10 minutes
 # Download and Run Apache Spark
 ```wget https://www.strategylions.com.au/mirror/spark/spark-3.0.0/spark-3.0.0-bin-hadoop3.2.tgz```
@@ -65,11 +72,13 @@ Change your cwd
 Submit the spark job
 
 ``` ./spark-3.0.0-bin-hadoop3.2/bin/spark-submit --class com.spark.anonymizer.App --master spark://localhost:7077 ./SparkAnonymizer/build/libs/SparkAnonymizer-1.0-SNAPSHOT.jar ./SparkAnonymizer/input.txt```
+
 * Now application is submitted to Spark.
 
 If everything is successfull, output will be produced at ./output/
 
 check the output of the application. 
+
 ```less ./output/part-00000-264d3fe4-f7dc-40dd-accf-0db636e8d2aa-c000.txt```
 
 **Note** File names will be different in your case as spark generates random guid based file names. Spark automatically splits the output to many files in case of large inputs.
@@ -82,8 +91,6 @@ Since application run on Apache Spark, it can be easily horizontly scaled. We ju
 
 # Unit Testing
 JUnit coverage is provided for classes which house the business logic and TDD approach was used. 
-
-# References
 
 ## Author
 * **Jagdeep Singh**
