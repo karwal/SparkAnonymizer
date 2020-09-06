@@ -44,12 +44,15 @@ This will create a folder SparkAnonymizer in your current working directory.
 * Execute command:
 
 ``` cd SparkAnonymizer ```
+
 * Compile code using following command
 
 ``` gradle clean test build ```
 
 * Generate a sample input file 
+
 ```java -cp ./build/libs/SparkAnonymizer-1.0-SNAPSHOT.jar com.spark.anonymizer.input.Generator```
+
 When prompted enter 2000 to generate a 2GB sample input file.
 
 ![alt text](https://github.com/karwal/SparkAnonymizer/blob/master/images/generate.png?raw=true)
