@@ -18,8 +18,8 @@ public class Generator {
     private List<String> referenceSuburbs;
     private List<String> referenceStates;
 
-    private String TEMP_FILE_NAME = "SampleInput.temp";
-    private String INPUT_FILE_NAME = "SampleInput.txt";
+    private String TEMP_FILE_NAME = "input.temp";
+    private String INPUT_FILE_NAME = "input.txt";
 
     private Generator() {
         referenceNames = readFile("src/main/resources/ReferenceNames.txt");
